@@ -1,2 +1,1 @@
-# Mediation-App
-Keep Yourself Calm &amp; Zen with this Mediation-App...
+# Meditation-app

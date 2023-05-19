@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-light: white;
+}
+body {
+  background: blue;
+  font-family: 'Acme', sans-serif;
+  background: url('images/meditation.jpg') no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+
+.button-container {
+  width: 60%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+.button {
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+  color: rgb(209, 202, 202);
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 2px solid rgb(209, 202, 202);
+}
+
+.button:hover {
+  border: 2px solid white;
+  color: white;
+}
+
+.timer-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-box {
+  /* position: relative; */
+  border-radius: 50%;
+  background-color: burlywood;
+}
+
+text {
+  fill: white;
+}
+
+.play-button {
+  pointer-events: none;
+}
+
+.pause-button {
+  display: none;
+  font-size: 1.7em;
+}
+
+.player-icon {
+  width: 5rem;
+  /* border: 2px solid red; */
+}
+
+.timer {
+  color: white;
+  font-size: 2rem;
+}
+
+.music-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  width: 50%;
+  max-width: 600px;
+}
+
+.icons {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.beach {
+  background-color: #fb743e;
+}
+
+.rain {
+  background-color: #99bbad;
+}
+
+/* SVG styles */
+circle {
+  fill: transparent;
+  stroke: lightgray;
+  stroke-width: 10;
+}
+
+.outer-circle {
+  stroke: lightgray;
+  /* stroke-dasharray: 0 283; */
+  stroke-linecap: round;
+  stroke-width: 10;
+  transition: 1s linear all;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transform-origin: 50% 50%;
+}
+
+svg text.play-button {
+  font-family: sans-serif;
+  font-size: 3em;
+  fill: white;
+  cursor: pointer;
+}

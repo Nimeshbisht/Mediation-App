@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="/images/meditation.svg" type="image/icon type" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer-buttons">
+        <button data-timer="180" class="button">3 Minutes</button>
+        <button data-timer="300" class="button">5 Minutes</button>
+        <button data-timer="600" class="button">10 Minutes</button>
+      </div>
+      <div class="timer-container">
+        <div class="player-container">
+          <svg
+            class="svg-circle"
+            width="160"
+            height="160"
+            viewbox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="50" cy="50" r="45" class="inner-circle" />
+            <circle cx="50" cy="50" r="45" class="outer-circle" />
+            <text data-buttonvalue="play" x="35" y="60" class="play-button">
+              &#x25b6;
+            </text>
+            <text data-buttonvalue="pause" x="35" y="60" class="pause-button">
+              &#9612; &#9612;
+            </text>
+          </svg>
+        </div>
+        <span class="timer"></span>
+      </div>
+
+      <audio
+        loop
+        src="sound/sea-waves.mp3"
+        type="audio/mp3"
+        class="beach-sound"
+      ></audio>
+      <audio
+        loop
+        src="sound/bell.mp3"
+        type="audio/mp3"
+        class="rain-sound"
+      ></audio>
+      <div class="music-container">
+        <div>
+          <img
+            data-value="beach"
+            class="icons beach"
+            src="images/beach.svg"
+            alt="beach"
+          />
+        </div>
+        <div>
+          <img
+            data-value="rain"
+            class="icons rain"
+            src="images/rain.svg"
+            alt="rain"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
